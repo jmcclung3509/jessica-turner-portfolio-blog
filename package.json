@@ -11,12 +11,15 @@
   },
   "dependencies": {
     "nuxt": "^3.11.2",
+    "nuxt-content-assets": "^1.4.3",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
   },
   "devDependencies": {
+    "@nuxt/content": "^2.12.1",
     "@nuxt/devtools": "^1.1.5",
-    "@nuxtjs/tailwindcss": "^6.11.4"
-
+    "@nuxtjs/color-mode": "^3.4.0",
+    "@nuxtjs/tailwindcss": "^6.11.4",
+    "@tailwindcss/typography": "^0.5.12"
   }
 }

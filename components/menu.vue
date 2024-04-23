@@ -7,6 +7,12 @@
           <li>
             <nuxt-link class="link" to="/about">About</nuxt-link>
           </li>
+          <li>
+            <nuxt-link class="link" to="/blog">Blog</nuxt-link>
+          </li>
+          <li>
+            <nuxt-link class="link" to="/blog/projects">Projects</nuxt-link>
+          </li>
         </ul>
       </nav>
 </template>

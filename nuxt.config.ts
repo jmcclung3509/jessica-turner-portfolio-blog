@@ -29,5 +29,18 @@ export default defineNuxtConfig({
   devtools: {
     enabled: true,
   },
-  modules: ["@nuxt/devtools", "@nuxtjs/tailwindcss"],
+  modules: ["@nuxt/devtools", "@nuxtjs/tailwindcss", '@nuxtjs/color-mode', '@nuxt/content', 'nuxt-content-assets'],
+  colorMode: {
+    classSuffix: ''
+  },
+  content: {
+    highlight:{
+      theme: {
+      dark: 'github-dark',
+      default: 'min-light',
+      system: 'github-light'
+      }
+
+    }
+  }
 });
