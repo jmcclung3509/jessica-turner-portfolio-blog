@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto max-w-3xl space-y-14">
+  <div class="container mx-auto max-w-5xl space-y-14">
     <header class="flex justify-between items-center">
         <div class="flex space-between gap-24 items-center">
    

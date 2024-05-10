@@ -16,7 +16,9 @@ content: /images/icons8-nuxt-js-480.png
 
 ## What is Nuxt 3?
 
-Nuxt is a versatile, intuitive, open-source framework based on Vue.js.
+
+Nuxt.js is a development framework that enhances the capabilities of Vue.js, a popular JavaScript framework for building user interfaces. It simplifies the process of creating server-side rendered (SSR) and static web applications. Nuxt.js provides a structured environment with opinionated conventions, allowing developers to focus on writing code rather than handling configuration complexities. It offers built-in solutions for SSR, routing, state management, and more, along with support for modular architecture through modules and plugins. This empowers developers to create high-performance, scalable web applications with SEO-friendly features while leveraging the power and simplicity of Vue.js.
+
 ## Why choose Nuxt?
 
 - What sets Nuxt apart is its ability to handle everything from the front end to the back end, making full-stack development a piece of cake. Plus, it's open source, so there's a whole community backing it up and adding cool features all the time.
@@ -30,53 +32,53 @@ Nuxt is a versatile, intuitive, open-source framework based on Vue.js.
 Here's is the  basic setup  I use for getting started with a  Nuxt 3 application.
 
 In the terminal:
-1. Create a new project
+1. **Create a new project**
 ```console
 npx nuxi@latest init "project name"
 ```
 
-2. Change into your new project 
+2. **Change into your new project** 
 ```console
 cd "project name"
 ```
 
-3. Install dependencies
+3. **Install dependencies**
 ```console
  npm install
  ```
 
- 4. Install Tailwind
+ 4. **Install Tailwind**
  ```console
  npx nuxi module add @nuxtjs/tailwindcss
  npx tailwindcss init
  ```
 
 
- 5. Install DevTools
+ 5. **Install DevTools**
  ```console
  npm i -D @nuxt/devtools
  ```
 
- 6. Install Sass
+ 6. **Install Sass**
  ```console
  npm install sass sass-loader --save-dev
  ```
 
- 7.  Open in Visual Studio Code
+ 7.  **Open in Visual Studio Code**
  ```console
 code .
 ```
 
 
 
- 8. In nuxt.config add 
+ 8. **In nuxt.config add:** 
 ```console
   modules: ["@nuxt/devtools", "@nuxtjs/tailwindcss"],
   css: ["@/assets/main.scss"], //Make sure to adjust this to the location of your scss file(s)
   ```
  
 
-9. Start dev server
+9. **Start dev server**
 ```console
 npm run dev
 ```
@@ -84,15 +86,22 @@ npm run dev
 
 
 
-Create a GitHub Repo with your new Project
+## Create a GitHub Repo with your new Project
 
-In the terminal of your project
+1. **Add and commit**
+
+In the terminal of your project**
 ```console
 1. git add .
 2. git commit -m "Initial commit"
 ```
 
+2. **Create new repo**
+
 Go to your GitHub and create new Repo
+![Screenshot of creating a new repo](/images/new-repo.png)
+
+3. **Push to your new repo**
 
 Copy  the code under "…or push an existing repository from the command line"
 ```console
@@ -100,9 +109,10 @@ git remote add origin https://github.com/{{username}}/{{repo_name}}.git
 git branch -M main
 git push -u origin main
 ```
+![Screenshot of pushing new repo](/images/push-repo.png)
 
  That's it. You now have a starter template for working with Nuxt, Tailwindcss and Sass
 
-Find my starter template [here](https://github.com/jmcclung3509/nuxt-template)
+Find my **starter template** [here](https://github.com/jmcclung3509/nuxt-template)
  
 
