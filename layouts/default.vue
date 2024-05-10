@@ -1,17 +1,15 @@
 <template>
-  <div class="container mx-auto max-w-5xl space-y-14">
+  <div class="container mx-auto max-w-5xl space-y-14 py-24">
     <header class="flex justify-between items-center">
-        <div class="flex space-between gap-24 items-center">
-   
-        <h3 class="text-2xl hover:text-highlightLight dark:hover:text-highlightDark hover:cursor-pointer dark:hover:text-[#44ccff]">
-          Jessica Turner
-        </h3>
+     
+   <nuxt-link class="text-2xl hover:text-highlightLight dark:hover:text-highlightDark hover:cursor-pointer dark:hover:text-[#44ccff]"to="/">
+       
+       Jessica Turner
+   </nuxt-link>
      
       <Menu />
-    </div>
-    <ClientOnly>
-      <ColorModeSelector /> 
-    </ClientOnly>
+  
+
     </header>
 
     <slot />

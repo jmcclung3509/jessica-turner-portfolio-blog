@@ -1,56 +1,65 @@
 <template>
-  <section class="not-prose font-mono">
-    <div class="column text-gray-400 text-sm">
-      <div class="date">Date</div>
-      <div class="title">Title</div>
-    </div>
-    <ul>
-      <li v-for="post in formattedData" :key="post._path">
-        <nuxt-link
-          class="column hover:bg-gray-100 dark:hover:bg-gray-800"
-          :to="post._path"
-        >
-          <div class="date">{{ post.date }}</div>
-          <div class="title">{{ post.title }}</div>
-          </nuxt-link >
-      </li>
-    </ul>
-  </section>
+  <slot :posts="posts">
+    <section class="not-prose font-mono">
+      <div class="column text-gray-400 text-sm">
+        <div class="date">Date</div>
+        <div class="title pl-7">Title</div>
+      </div>
+      <ul>
+        <li v-for="post in posts" :key="post._path">
+          <nuxt-link
+            class="column hover:bg-gray-100 dark:hover:bg-gray-800"
+            :to="post._path"
+          >
+            <div class="date">{{ post.date }}</div>
+            <div class="title">{{ post.title }}</div>
+          </nuxt-link>
+        </li>
+      </ul>
+    </section>
+  </slot>
 </template>
 
 <script setup>
-const {data: posts } = await useAsyncData("blog-list", () =>
-  queryContent("/blog")
+
+const props = defineProps({
+  limit: {
+  type: Number,
+  default: null,
+  }
+})
+const { data: postData } = await useAsyncData("blog-list", () =>{
+
+
+ const query= queryContent("/blog")
     .where({ _path: { $ne: "/blog" } })
     .only(["_path", "title", "publishedAt"])
-    .sort({publishedAt:-1})
-    .find()
-   
-);
+    .sort({ publishedAt: -1 })
+ if (props.limit){
+  query.limit(props.limit)
 
-const formattedData = computed(()=>{
-return posts.value.map((post)=>{
-    let year = new Date(post.publishedAt).getFullYear()
-    year = year.toString().slice(2)
-    let month = new Date(post.publishedAt).getMonth() + 1
-    if(month < 10){
-        month = `0${month}`
-    }else{
-        month = `${month}`
+ }
+  return query.find();
+
+});
+
+const posts = computed(() => {
+  return postData.value.map((post) => {
+    let year = new Date(post.publishedAt).getFullYear();
+    year = year.toString().slice(2);
+    let month = new Date(post.publishedAt).getMonth() + 1;
+    if (month < 10) {
+      month = `0${month}`;
+    } else {
+      month = `${month}`;
     }
-    const day= new Date(post.publishedAt).getDate()
+    const day = new Date(post.publishedAt).getDate();
 
-    const date = `${month}/${day}/${year}`
- 
-return {...post, date}
+    const date = `${month}/${day}/${year}`;
 
-})
-
-})
-
-
-
-
+    return { ...post, date };
+  });
+});
 </script>
 <style scoped>
 .column {

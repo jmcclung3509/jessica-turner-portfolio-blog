@@ -11,37 +11,51 @@
         <div v-if="doc.toc" class="col-span-2 not-prose">
           <aside class="sticky top-10">
             <h2 class="font-semibold">Table of Contents</h2>
-            <toc-links :links="doc.body.toc.links" :activeId="activeId"/>
+            <toc-links :links="doc.body.toc.links" :activeId="activeId" />
           </aside>
         </div>
       </div>
     </ContentDoc>
   </article>
 </template>
-
 <script setup>
 const activeId = ref(null);
+
 onMounted(() => {
+  let observer;
+  let elements =[]
+
+
   const callback = (entries) => {
     for (const entry of entries) {
       if (entry.isIntersecting) {
+        console.log(entry.isIntersecting)
         activeId.value = entry.target.id;
         break;
       }
     }
   };
-  const observer = new IntersectionObserver(callback, {
+
+  observer = new IntersectionObserver(callback, {
     root: null,
-    threshold: 0.4,
+    threshold: 0.5,
   });
-  const elements = document.querySelectorAll("h2, h3");
-  for (const element of elements) {
+
+setTimeout(()=>{
+    elements = document.querySelectorAll("h2, h3");
+  
+
+     for (const element of elements) {
     observer.observe(element);
-  }
-  onBeforeUnmount(()=>{
+    console.log(element)
+  } 
+}, 200)
+
+
+  onBeforeUnmount(() => {
     for (const element of elements) {
       observer.unobserve(element);
     }
-  })
+  });
 });
 </script>

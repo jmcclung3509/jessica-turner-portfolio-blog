@@ -1,7 +1,7 @@
 /* variables */
 :root {
     --highlightDark: #44ccff;
-    --highlightLight: #009df5;
+    --highlightLight: #0089f5;
 }
 
 
@@ -17,10 +17,17 @@
 
   font-size: 2rem;
 }
-.image-container i:hover{
+.light .image-container i:hover{
 /* color: #55d6be; */
 color: var(--highlightLight);
 }
 .dark .image-container i:hover{
     color: var(--highlightDark);
 }
+ .light  p > a:hover, .light  div > a:hover{
+
+    color: var(--highlightLight);
+ }
+ .dark  p > a:hover, .dark  div > a:hover{
+    color: var(--highlightDark);
+ }

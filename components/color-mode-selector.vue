@@ -1,9 +1,9 @@
 <template>
   <div>
     <div class="button-container flex items-center justify-center gap-2" >
-       <span v-show="showNextModeLabel" class="text-gray-500 text-xs">{{ nextMode}} </span> 
+   
     <button @click="toggleColorMode" @mouseover="showNextModeLabel=true" @mouseleave="showNextModeLabel=false" class="hover:bg-gray-100 dark:hover:bg-gray-600 px-2 py-1 text-gray-500">{{nextIcons}}</button>
- 
+     <span class="text-xs text-gray-500 transition-all" :class="showNextModeLabel ? 'opacity-100' : 'opacity-0'">{{ nextMode}} </span> 
 </div>
   </div>
 </template>

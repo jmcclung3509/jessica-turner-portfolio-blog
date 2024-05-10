@@ -22,10 +22,7 @@ export default defineNuxtConfig({
           href: "https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap",
           crossorigin: "",
         },
-        {
-          rel: "stylesheet",
-          href: "/assets/style.css",
-        },
+     
         
         
       ],
@@ -39,10 +36,18 @@ export default defineNuxtConfig({
 
       noscript: [{ children: "This website requires JavaScript." }],
     },
+    pageTransition: {
+      name: 'page',
+      mode: 'out-in',
+    }
   },
   devtools: {
     enabled: true,
+    timeline:{
+      enabled: true
+    }
   },
+
   css: ['~/assets/style.css'],
   router: {
     options: {

@@ -1,6 +1,6 @@
 ---
 description:  A list of blog posts
-toc: true
+
 ---
 
 # Blog Posts

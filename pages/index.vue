@@ -1,7 +1,7 @@
 <template>
-    <div>
-        <h1>Home Page</h1>
-    </div>
+  <div class="prose dark:prose-invert ">
+    <ContentDoc path="/" />
+</div>
 </template>
 
 <script setup>
