@@ -1,5 +1,5 @@
 <template>
-<div class="prose dark:prose-invert prose-a:no-underline prose-h2:underline ">
+<div class="prose dark:prose-invert ">
     <ContentDoc path="/about" />
 </div>
 </template>

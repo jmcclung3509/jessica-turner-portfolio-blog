@@ -1,9 +1,9 @@
 <template>
-  <div class="container mx-auto max-w-2xl space-y-14">
+  <div class="container mx-auto max-w-3xl space-y-14">
     <header class="flex justify-between items-center">
         <div class="flex space-between gap-24 items-center">
    
-        <h3 class="text-2xl hover:text-stone-600 hover:cursor-pointer">
+        <h3 class="text-2xl hover:text-highlightLight dark:hover:text-highlightDark hover:cursor-pointer dark:hover:text-[#44ccff]">
           Jessica Turner
         </h3>
      

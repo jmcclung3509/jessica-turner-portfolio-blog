@@ -11,7 +11,7 @@
             <nuxt-link class="link" to="/blog">Blog</nuxt-link>
           </li>
           <li>
-            <nuxt-link class="link" to="/blog/projects">Projects</nuxt-link>
+            <nuxt-link class="link" to="/projects">Projects</nuxt-link>
           </li>
         </ul>
       </nav>
@@ -19,6 +19,6 @@
 
 <style scoped>
 .link {
-    @apply hover:bg-stone-200 hover:cursor-pointer p-1;
+    @apply  hover:text-highlightLight dark:hover:text-highlightDark hover:cursor-pointer p-1;
 }
 </style>

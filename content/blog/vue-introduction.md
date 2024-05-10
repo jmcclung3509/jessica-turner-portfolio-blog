@@ -1,15 +1,18 @@
 --- 
 description: A beginner's guid to getting started with Vue 3.
-image: image/blog/2024/icons8-vue-js-480.png
+publishedAt: 2024-04-27 14:00:00
+toc: true
+image: image/icons8-vue-js-480.png
 head:
 meta:
 - name: 'og:image'
-content: image/blog/2024/icons8-vue-js-480.png
+content: /images/icons8-vue-js-480.png
+
 ---
 
 # Introduction to Vue 3
 
-![Vue 3 Introduction](/images/blog/2024/icons8-vue-js-480.png)
+![Vue 3 Introduction](/images/icons8-vue-js-480.png)
 
 
 ## What is Vue 3?

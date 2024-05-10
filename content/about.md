@@ -18,7 +18,7 @@ head:
 
 ## About me
 
-I'm Jessica, a web developer, living and working in Northwest Georgia.  I have three kids, one husband, and a one-eyed dog named Fury.  When I'm not at my computer you'll likely find me with my hands in the dirt or my nose in a book.
+I'm Jessica, a web developer, living and working in North Georgia.  I have three kids, a husband, and a one-eyed dog named Fury.  When I'm not at my computer you'll likely find me with my hands in the dirt or my nose in a book.
 
 ## My tech stack
 
@@ -43,6 +43,11 @@ I am a skilled front-end developer rapidly working toward becoming full-stack
 - Webpack
 - Jest
 - Markdown
+
+### Currently Learning
+- C#
+- .Net
+- Firebase
 
 ### Soft skills 
 - Excellent team-player
