@@ -1,5 +1,5 @@
 <template>
-  <article
+  <article :class="`article-${cleanPath}`" 
     class="prose dark:prose-invert prose-img:mx-auto prose-pre:bg-white dark:prose-pre:bg-gray-800 prose-pre:text-gray-700 dark:prose-pre:text-gray-300 prose-a:no-underline hover:prose-a:underline max-w-none pb-24"
   >
     <ContentDoc v-slot="{ doc }">
@@ -20,6 +20,13 @@
 </template>
 <script setup>
 const activeId = ref(null);
+
+const route = useRoute();
+
+const cleanPath = computed(()=>{
+return route.fullPath.replace(/\//g, "");
+})
+
 
 onMounted(() => {
   let observer;
@@ -47,7 +54,7 @@ setTimeout(()=>{
 
      for (const element of elements) {
     observer.observe(element);
-    console.log(element)
+  
   } 
 }, 200)
 

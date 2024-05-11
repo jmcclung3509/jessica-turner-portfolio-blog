@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto max-w-5xl space-y-14 py-7 px-5 md:unset md:py-24">
+  <div class="container mx-auto max-w-5xl space-y-14 py-7 px-5 md:unset md:py-24" :class="`page-${$route.name}`">
     <header class="flex justify-between items-start md:items-center">
      
    <nuxt-link class="md:whitespace-nowrap hidden md:block text-2xl hover:text-highlightLight dark:hover:text-highlightDark hover:cursor-pointer dark:hover:text-[#44ccff]"to="/">
@@ -17,6 +17,8 @@
 </template>
 
 <script setup>
+const route=useRoute()
+
 useHead({
   titleTemplate: "%s -  Jessica Turner",
 });

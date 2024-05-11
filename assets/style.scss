@@ -1,74 +1,125 @@
 /* variables */
-:root {
-    --highlightDark: #44ccff;
-    --highlightLight: #0089f5;
+// :root {
+//     --highlightDark: #44ccff;
+//     --highlightLight: #0089f5;
+// }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+
+    :root {
+        --highlight: #0089f5;
+
+    }
+
+    :root[class~="dark"] {
+        --highlight: #44ccff;
+    }
 }
 
 
+.post-container {
+    a {
+        text-decoration: none;
+    }
+}
 
 .icons-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
     gap: .5rem;
-    i{
+
+    i {
 
         font-size: 2rem;
     }
 }
-.light{
 
-  i:hover{
-    color: var(--highlightLight);
-  
-  }
-  p, div {
-    a:hover{
-        color: var(--highlightLight);
+i:hover {
+    color: var(--highlight);
 
-    }
-  }
-} 
+}
 
- .dark{
-    i:hover{
-        color: var(--highlightDark);
-    }
-    p, div {
-        a:hover{
-            color: var(--highlightDark);
-    
+article {
+
+    p,
+    div {
+        a:hover {
+            color: var(--highlight);
+
         }
-      }
- }
- .image-container{
+    }
+
+    &.article-blog {
+
+        p,
+        div {
+            a:hover {
+                color: inherit;
+            }
+        }
+    }
+}
+
+
+
+.image-container {
     display: flex;
     justify-content: flex-start;
-    img.top-blog-image{
+
+    img.top-blog-image {
         width: 30%;
 
     }
- }
-#whats-new-on-the-blog{
-    a{
-        text-decoration: none;;
+}
+
+.page-index,
+.page-blog-slug,
+.page-projects {
+
+    h2,
+    h3 {
+        a {
+            text-decoration: none;
+
+            &:hover {
+                color: inherit;
+            }
+        }
+
+        div {
+            a:hover {
+                color: var(--highlight);
+            }
+        }
+    }
+
+}
+
+.page-index {
+    a {
+        text-decoration: none;
+        font-weight: 500;
         &:hover{
-            color: inherit;
+            text-decoration: underline;
+            color: var(--highlight);
+
+        }
+    }
+
+    h1+p {
+        a {
+            color: var(--highlight);
         }
     }
 }
-.post-container{
-    a{
-        text-decoration: none;
-    }
-}
-i.fa-wordpress{
-    font-size: 8rem;
-}
-h2, h3{
-    a:hover{
-        color: inherit !important;
-        text-decoration: none !important;
 
-    }
+//Blog Specific Styles
+i.fa-wordpress {
+    font-size: 8rem;
 }
