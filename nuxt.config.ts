@@ -48,7 +48,7 @@ export default defineNuxtConfig({
     }
   },
 
-  css: ['~/assets/style.css'],
+  css: ['~/assets/style.scss'],
   router: {
     options: {
       scrollBehaviorType: 'smooth'
@@ -81,4 +81,9 @@ export default defineNuxtConfig({
       },
     },
   },
+  nitro:{
+    prerender: {
+      routes: ['/sitemap.xml']
+    }
+  }
 });

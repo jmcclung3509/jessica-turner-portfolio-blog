@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div class="button-container flex items-center justify-center gap-2" >
+    <div class="button-container flex items-start md:items-center justify-center gap-2" >
    
-    <button @click="toggleColorMode" @mouseover="showNextModeLabel=true" @mouseleave="showNextModeLabel=false" class="hover:bg-gray-100 dark:hover:bg-gray-600 px-2 py-1 text-gray-500">{{nextIcons}}</button>
+    <button @click="toggleColorMode" @mouseover="showNextModeLabel=true" @mouseleave="showNextModeLabel=false" class="hover:bg-gray-100 dark:hover:bg-gray-600 px-2 py-1 text-gray-500 text-2xl md:text-base">{{nextIcons}}</button>
      <span class="text-xs text-gray-500 transition-all" :class="showNextModeLabel ? 'opacity-100' : 'opacity-0'">{{ nextMode}} </span> 
 </div>
   </div>
@@ -15,12 +15,12 @@ const showNextModeLabel = ref(false)
 const colorMode = useColorMode();
 
 const modes = [
-    'system',
+    // 'system',
     'light',
     'dark'
 ]
 const nextModeIcons = {
-  system: '🌓',
+  // system: '🌓',
   light: '🌕',
   dark: '🌑'
 }

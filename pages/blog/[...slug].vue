@@ -5,10 +5,10 @@
     <ContentDoc v-slot="{ doc }">
       {{ doc.body.toc.link }}
       <div class="grid grid-cols-6 gap-24">
-        <div :class="{ 'col-span-4': doc.toc, 'col-span-5': !doc.toc }">
+        <div :class="{ '  col-span-6 md:col-span-4': doc.toc, 'col-span-6': !doc.toc }">
           <ContentRenderer :value="doc" />
         </div>
-        <div v-if="doc.toc" class="col-span-2 not-prose">
+        <div v-if="doc.toc" class="hidden md:block col-span-2 not-prose">
           <aside class="sticky top-10">
             <h2 class="font-semibold">Table of Contents</h2>
             <toc-links :links="doc.body.toc.links" :activeId="activeId" />

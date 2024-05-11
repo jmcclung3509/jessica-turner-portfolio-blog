@@ -10,8 +10,11 @@ content: /images/icons8-nuxt-js-480.png
 ---
 
 # Introduction to Nuxt 3
+<div class="image-container flex justify-start">
+<img src="/images/icons8-nuxt-js-480.png" alt="Nuxt icon" class="top-blog-image not-prose"/>
+</div>
 
-![Vue 3 Introduction](/images/icons8-nuxt-js-480.png)
+
 
 
 ## What is Nuxt 3?

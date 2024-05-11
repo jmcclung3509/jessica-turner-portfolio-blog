@@ -11,7 +11,8 @@ content: /images/wordpress-logo.png
 ---
 
 # All about breadcrumbs
-<img src = "/images/wordpress-logo.png" alt="wordpress logo" width="150" height="100" style="margin-right: 100%;">
+<i class="fa-brands fa-wordpress"></i>
+<!-- <img src = "/images/wordpress-logo.png" alt="wordpress logo" width="150" height="100" style="margin-right: 100%;"> -->
 
 
 

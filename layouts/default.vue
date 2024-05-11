@@ -1,8 +1,8 @@
 <template>
-  <div class="container mx-auto max-w-5xl space-y-14 py-24">
-    <header class="flex justify-between items-center">
+  <div class="container mx-auto max-w-5xl space-y-14 py-7 px-5 md:unset md:py-24">
+    <header class="flex justify-between items-start md:items-center">
      
-   <nuxt-link class="text-2xl hover:text-highlightLight dark:hover:text-highlightDark hover:cursor-pointer dark:hover:text-[#44ccff]"to="/">
+   <nuxt-link class="md:whitespace-nowrap hidden md:block text-2xl hover:text-highlightLight dark:hover:text-highlightDark hover:cursor-pointer dark:hover:text-[#44ccff]"to="/">
        
        Jessica Turner
    </nuxt-link>

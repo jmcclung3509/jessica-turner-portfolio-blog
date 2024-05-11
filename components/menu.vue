@@ -1,7 +1,10 @@
 <template>
-  <div class="flex justify-center items-center gap-7">
+
     <nav>
-      <ul class="flex justify-center gap-7 font-mono">
+      <ul class="flex flex-col md:flex-row justify-center spaceu-y-1 md:space-y-0 md:gap-7 font-mono">
+        <li>
+          <nuxt-link class="link" to="/about">Home</nuxt-link>
+        </li>
         <li>
           <nuxt-link class="link" to="/about">About</nuxt-link>
         </li>
@@ -16,11 +19,11 @@
     <ClientOnly>
       <ColorModeSelector />
     </ClientOnly>
-  </div>
+
 </template>
 
 <style scoped>
 .link {
-  @apply hover:text-highlightLight dark:hover:text-highlightDark hover:cursor-pointer p-1;
+  @apply hover:text-highlightLight dark:hover:text-highlightDark hover:cursor-pointer p-1 text-2xl md:text-base;
 }
 </style>
