@@ -16,9 +16,13 @@
         </li>
       </ul>
     </nav>
+    <div class="right flex justify-center items-center gap-4">
     <ClientOnly>
+      <SearchBar/>
+
       <ColorModeSelector />
     </ClientOnly>
+  </div>
 
 </template>
 

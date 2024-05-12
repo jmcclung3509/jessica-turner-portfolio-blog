@@ -2,6 +2,7 @@
 description: Basic starter template for Nuxt App.
 publishedAt: 2024-05-02 00:30:00
 image: /images/icons8-nuxt-js-480.png
+keywords: ['nuxt', 'tailwind', 'template']
 toc: true
 head:
 meta:

@@ -13,15 +13,22 @@
 
     :root {
         --highlight: #0089f5;
+        --default-text: #475569;
+        --bold-text: #1e293b
 
     }
 
     :root[class~="dark"] {
         --highlight: #44ccff;
+        --default-text: #e2e8f0;
+        --bold-text: #f8fafc;
     }
 }
 
+.cap{
+    text-transform: uppercase;
 
+}
 .post-container {
     a {
         text-decoration: none;
@@ -103,6 +110,7 @@ article {
 
 .page-index {
     a {
+        color: var(--default-text);
         text-decoration: none;
         font-weight: 500;
         &:hover{
@@ -114,7 +122,7 @@ article {
 
     h1+p {
         a {
-            color: var(--highlight);
+            color: var(--bold-text);
         }
     }
 }

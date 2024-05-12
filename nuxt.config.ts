@@ -22,10 +22,7 @@ export default defineNuxtConfig({
           href: "https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap",
           crossorigin: "",
         },
-        {
-        href:"./output.css", 
-        rel:"stylesheet"
-        }
+     
      
         
         
