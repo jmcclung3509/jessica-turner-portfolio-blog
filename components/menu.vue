@@ -28,6 +28,6 @@
 
 <style scoped>
 .link {
-  @apply hover:text-highlightLight  dark:hover:text-highlightDark hover:cursor-pointer p-1 text-2xl md:text-base;
+  @apply hover:text-highlight hover:cursor-pointer p-1 text-2xl md:text-base;
 }
 </style>
