@@ -17,8 +17,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        highlightLight: "#00aaff",
-        highlightDark: "#44ccff",
+        highlight: "var(--highlight)", 
+        defaultText: "var(--default-text)",
+
         },
       },
     },
