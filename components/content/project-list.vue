@@ -7,7 +7,7 @@
         <li
           v-for="repo in repos"
           :key="repo.id"
-          class="border border-gray-200 dark:border-gray-600 rounded-sm p-4 hover:bg-gray-100 font-mono dark:hover:bg-gray-700 dark:hover:text-white"
+          class="border border-gray-200 dark:border-gray-600 rounded-sm p-4 hover:bg-gray-100 font-mono dark:hover:bg-gray-800 dark:hover:text-white"
         >
           <div class="flex items-center justify-between">
             <a

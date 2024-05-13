@@ -1,5 +1,5 @@
 --- 
-description: A beginner's guid to getting started with Vue 3.
+description: A beginner's guide to getting started with Vue 3.
 publishedAt: 2024-04-27 14:00:00
 keywords: ['vue']
 toc: true

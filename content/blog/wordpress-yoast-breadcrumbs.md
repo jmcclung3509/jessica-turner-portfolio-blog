@@ -1,7 +1,7 @@
 --- 
 description: WordPress using Yoast SEO to add breadcrumbs.
 publishedAt: 2024-05-09 09:00:00
-keywords: ['wordpress', 'seo', 'yoast']
+keywords: ['wordpress', 'seo', 'yoast', 'breadcrumbs']
 toc: true
 image: /images/wordpress-logo.png
 head:

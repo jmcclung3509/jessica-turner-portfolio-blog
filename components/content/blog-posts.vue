@@ -33,7 +33,7 @@ const { data: postData } = await useAsyncData("blog-list", () =>{
 
  const query= queryContent("/blog")
     .where({ _path: { $ne: "/blog" } })
-    .only(["_path", "title", "publishedAt"])
+    .only(["_path", "title", "publishedAt", "keywords"])
     .sort({ publishedAt: -1 })
  if (props.limit){
   query.limit(props.limit)

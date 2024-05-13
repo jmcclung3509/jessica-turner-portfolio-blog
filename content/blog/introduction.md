@@ -1,6 +1,6 @@
 ---
 title: "Hi, I'm Jessica."
-description: "Description of the page"
+description: "Learn a little about me."
 publishedAt: 2024-04-20 17:15:00
 
 head:

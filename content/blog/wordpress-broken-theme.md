@@ -1,7 +1,7 @@
 --- 
-description: WordPress broken theme error.
+description: How I fixed 'This theme is broken. Template is missing.' error on my WordPress website.
 publishedAt: 2024-05-06 14:00:00
-keywords: ['wordpress', 'bug', 'fix']
+keywords: ['wordpress', 'bug', 'fix', 'theme', 'template']
 image: /images/wordpress-logo.png
 
 head:
