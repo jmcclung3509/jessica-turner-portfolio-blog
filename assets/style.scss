@@ -7,14 +7,14 @@
 @layer base {
 
     :root {
-        --highlight: #0089f5;
+        --highlight: #006AF9;
         --default-text: #475569;
         --bold-text: #1e293b
 
     }
 
     :root[class~="dark"] {
-        --highlight: #44ccff;
+        --highlight: #006AF9;
         --default-text: #e2e8f0;
         --bold-text: #f8fafc;
     }
