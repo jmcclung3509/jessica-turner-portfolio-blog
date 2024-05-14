@@ -1,5 +1,5 @@
 <template>
-  <template v-if="posts.limit">
+  <template v-if="props.limit">
     <section class="not-prose font-mono">
     <div class="post-container space-y-4">
       <div v-for="post in posts" :key="post.title">
@@ -45,6 +45,9 @@ const { data: postData } = await useAsyncData("blog-list", () => {
   if (props.limit) {
     console.log(props.limit);
     query.limit(props.limit);
+  }
+  else{
+  console.log(props.limit)
   }
   return query.find();
 });
