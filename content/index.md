@@ -1,5 +1,5 @@
 ---
-title: Hompage of Jessica Turner's blog.
+title: Homepage of Jessica Turner's blog.
 description:  Homepage featuring links to most recent blog posts.
 publishedAt: 2024-04-20 17:15:00
 

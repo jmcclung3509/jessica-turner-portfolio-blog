@@ -53,6 +53,6 @@ I am a skilled front-end developer rapidly working toward becoming full-stack
 - Excellent team-player
 - Attention-to-detail
 - Love to find creative solutions to tough problems
-- Can-do attitiude
+- Can-do attitude
 - Lifelong learner
 

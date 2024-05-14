@@ -26,8 +26,8 @@ This theme is broken. Template is missing. Standalone themes need to have a temp
 
 After trying various fixes the thing that finally worked for me was deleting the theme and then reinstalling it.  To do this:
 1.  I first had to visit the website of the theme and download it. 
-2.  Deactivate all plugins (but take a picture first of your plugin scren so you rmemeber which ones are active and which ones aren't)  
-3.  Next, go to appearences --> themes--> add new theme.  I encountered problem when i t came to uploading the new theme and  had go to  incoginito mode in order to upload it.  
+2.  Deactivate all plugins (but take a picture first of your plugin screen so you remember which ones are active and which ones aren't)  
+3.  Next, go to appearances --> themes--> add new theme.  I encountered problem when i t came to uploading the new theme and  had go to  incognito mode in order to upload it.  
 4. Once uploaded, activate the theme and then activate the plugins.  
 
 Hopefully, that works for you.

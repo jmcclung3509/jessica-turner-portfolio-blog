@@ -23,7 +23,7 @@ head:
 
 ## Introduction
 
-Hi there. My name is Jessica Turner, and I am a frontend developer born and raised in the Bay Area, and soon to be living outside Atlanta, GA. I work primarily with Vue, Nuxt and WordPress, but also have experience with Node, Express and React. I am dilligently working to expand my technical knowledge and skills, especially with backend development.
+Hi there. My name is Jessica Turner, and I am a frontend developer born and raised in the Bay Area, and soon to be living outside Atlanta, GA. I work primarily with Vue, Nuxt and WordPress, but also have experience with Node, Express and React. I am diligently working to expand my technical knowledge and skills, especially with backend development.
 
 ## Why this blog
 
