@@ -1,33 +1,32 @@
 <template>
   <template v-if="props.limit">
     <section class="not-prose font-mono">
-    <div class="post-container space-y-4">
-      <div v-for="post in posts" :key="post.title">
-        <nuxt-link :to="post._path">{{ post.title }}</nuxt-link>
+      <div class="post-container space-y-4">
+        <div v-for="post in posts" :key="post.title">
+          <nuxt-link :to="post._path">{{ post.title }}</nuxt-link>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
   </template>
   <template v-else>
-     <section class="not-prose font-mono">
-    <div class="column text-gray-400 text-sm">
-      <div class="date">Date</div>
-      <div class="title pl-7">Title</div>
-    </div>
-    <ul>
-      <li v-for="post in posts" :key="post._path">
-        <nuxt-link
-          class="column hover:bg-gray-100 dark:hover:bg-gray-800"
-          :to="post._path"
-        >
-          <div class="date">{{ post.date }}</div>
-          <div class="title">{{ post.title }}</div>
-        </nuxt-link>
-      </li>
-    </ul>
-  </section>
+    <section class="not-prose font-mono">
+      <div class="column text-gray-400 text-sm">
+        <div class="date">Date</div>
+        <div class="title pl-7">Title</div>
+      </div>
+      <ul>
+        <li v-for="post in posts" :key="post._path">
+          <nuxt-link
+            class="column hover:bg-gray-100 dark:hover:bg-gray-800"
+            :to="post._path"
+          >
+            <div class="date">{{ post.date }}</div>
+            <div class="title">{{ post.title }}</div>
+          </nuxt-link>
+        </li>
+      </ul>
+    </section>
   </template>
- 
 </template>
 
 <script setup>
@@ -43,11 +42,7 @@ const { data: postData } = await useAsyncData("blog-list", () => {
     .only(["_path", "title", "publishedAt", "keywords"])
     .sort({ publishedAt: -1 });
   if (props.limit) {
-    console.log(props.limit);
     query.limit(props.limit);
-  }
-  else{
-  console.log(props.limit)
   }
   return query.find();
 });
@@ -62,10 +57,14 @@ const posts = computed(() => {
     } else {
       month = `${month}`;
     }
-    const day = new Date(post.publishedAt).getDate();
+    let day = new Date(post.publishedAt).getDate();
+    if (day < 10) {
+      day = `0${day}`;
+    } else {
+      day = `${day}`;
+    }
 
     const date = `${month}/${day}/${year}`;
-
     return { ...post, date };
   });
 });

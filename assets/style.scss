@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,21 +8,23 @@
     :root {
         --highlight: #006AF9;
         --default-text: #475569;
-        --bold-text: #1e293b
-
+        --bold-text: #1e293b;
+        --bg: #fff;
     }
 
     :root[class~="dark"] {
-        --highlight: #04D9FF;
+        --highlight: #0cead9;
         --default-text: #e2e8f0;
         --bold-text: #f8fafc;
+        --bg: #111827;
     }
 }
 
-.cap{
+.cap {
     text-transform: uppercase;
 
 }
+
 .post-container {
     a {
         text-decoration: none;
@@ -98,14 +99,15 @@ article {
             a:hover {
                 color: var(--highlight);
             }
-        } 
-        header +  a:hover{
-        text-decoration: none;
-        color: var(--default-text);
-         }
+        }
+
+        header+a:hover {
+            text-decoration: none;
+            color: var(--default-text);
+        }
     }
 
-    }
+}
 
 
 
@@ -115,7 +117,8 @@ article {
         color: var(--default-text);
         text-decoration: none;
         font-weight: 500;
-        &:hover{
+
+        &:hover {
             text-decoration: underline;
             color: var(--highlight);
 
@@ -127,15 +130,76 @@ article {
             color: var(--bold-text);
         }
     }
+
     header {
-      a:hover{
-        text-decoration: none;
-        color: var(--default-text);
-         }  
-    } 
+        a:hover {
+            text-decoration: none;
+            color: var(--default-text);
+        }
+    }
 }
 
 //Blog Specific Styles
 i.fa-wordpress {
     font-size: 8rem;
+}
+
+.gradient-border {
+    width: fit-content;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-width: 5px;
+    border-style: solid;
+    border-image: linear-gradient(to right, #729EFD, #8a64d6);
+    border-image-slice: 1;
+
+    &.slice-sides {
+        border-image-slice: 1 0;
+    }
+
+    &.left-only {
+        border-image-slice: 0 0 0 1;
+    }
+
+}
+
+.gradient-box {
+    position: relative;
+    padding: 5px;
+    width: 100px;
+
+
+
+    &:before {
+        border-radius: 10px;
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-image: linear-gradient(to bottom, #ff7a18, #af002d);
+    }
+
+    .content-box {
+        width: 100%;
+        border-radius: 5px;
+        position: relative;
+        text-align: center;
+        background: var(--bg);
+        color: var(--default-text);
+        padding: 10px 15px;
+    }
+}
+.gradient-3{
+ 
+        background: linear-gradient(45deg, var(--bg), var(--bg)) padding-box, linear-gradient(45deg, #ff7a18, #af002d) border-box;
+        padding: 10px 15px; 
+        border: 5px solid transparent;
+        width: fit-content;
+        border-radius: 10px;
+     
 }
