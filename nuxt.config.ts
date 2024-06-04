@@ -22,52 +22,41 @@ export default defineNuxtConfig({
           href: "https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap",
           crossorigin: "",
         },
-     
-     
-        
-        
       ],
       script: [
         {
-          src: "https://kit.fontawesome.com/358c1a754d.js", 
-          crossorigin: "anonymous"
-        }
+          src: "https://kit.fontawesome.com/358c1a754d.js",
+          crossorigin: "anonymous",
+        },
       ],
-    
 
       noscript: [{ children: "This website requires JavaScript." }],
     },
     pageTransition: {
-      name: 'page',
-      mode: 'out-in',
-    }
+      name: "page",
+      mode: "out-in",
+    },
   },
   devtools: {
     enabled: true,
-    timeline:{
-      enabled: true
-    }
+    timeline: {
+      enabled: true,
+    },
   },
 
-  css: ['~/assets/style.scss'],
+  css: ["~/assets/style.scss"],
   router: {
     options: {
-      scrollBehaviorType: 'smooth'
-    }
+      scrollBehaviorType: "smooth",
+    },
   },
 
-  modules: [
-    "@nuxt/devtools",
-    "@nuxtjs/tailwindcss",
-    "@nuxtjs/color-mode",
-    "@nuxt/content",
-    '@nuxtjs/mdc',
-  ],
- 
+  modules: ["@nuxt/devtools", "@nuxt/ui", "@nuxt/content", "@nuxtjs/mdc"],
+
   mdc: {
     highlight: {
-      langs: ['console', 'javascript', 'css', 'html']
-    }
+      langs: ["console", "javascript", "css", "html"],
+    },
   },
 
   colorMode: {
@@ -82,9 +71,9 @@ export default defineNuxtConfig({
       },
     },
   },
-  nitro:{
+  nitro: {
     prerender: {
-      routes: ['/sitemap.xml']
-    }
-  }
+      routes: ["/sitemap.xml"],
+    },
+  },
 });

@@ -194,12 +194,28 @@ i.fa-wordpress {
         padding: 10px 15px;
     }
 }
-.gradient-3{
- 
-        background: linear-gradient(45deg, var(--bg), var(--bg)) padding-box, linear-gradient(45deg, #ff7a18, #af002d) border-box;
-        padding: 10px 15px; 
-        border: 5px solid transparent;
-        width: fit-content;
-        border-radius: 10px;
-     
+
+.gradient-3 {
+
+    background: linear-gradient(45deg, var(--bg), var(--bg)) padding-box, linear-gradient(45deg, #ff7a18, #af002d) border-box;
+    padding: 10px 15px;
+    border: 5px solid transparent;
+    width: fit-content;
+    border-radius: 10px;
+
+}
+
+.nuxt-button {
+    background: #00dc82;
+    box-shadow: 0 1px 2px 0 #0000000d;
+    color: #0F172B;
+    padding-bottom: .375rem;
+    padding-top: .375rem;
+    padding-left: .625rem;
+    padding-right: .625rem;
+    font-weight: 500;
+    border-radius: .375rem;
+    display: inline-flex;
+    width: fit-contents;
+    font-size: 14px;
 }
