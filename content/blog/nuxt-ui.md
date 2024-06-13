@@ -1,5 +1,5 @@
 ---
-description: Introductoin to Nuxt UI
+description: Introduction to Nuxt UI
 publishedAt: 2024-06-03 11:30:00
 image: /images/icons8-nuxt-js-480.png
 keywords:
