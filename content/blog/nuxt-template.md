@@ -1,5 +1,5 @@
 --- 
-description: How to setup a basic Nuxt app with Tailwind, scss and Nuxt DevTools.
+description: How to setup a basic Nuxt app with Tailwind, SCSS and Nuxt DevTools.
 publishedAt: 2024-05-02 00:30:00
 image: /images/icons8-nuxt-js-480.png
 keywords: ['nuxt', 'tailwind', 'template', 'scss', 'devtools']

@@ -219,3 +219,29 @@ i.fa-wordpress {
     width: fit-contents;
     font-size: 14px;
 }
+
+.button-container {
+    .btn {
+        padding: .375rem .625rem;
+        font-weight: 500;
+        border-radius: .375rem;
+    color: #fff;
+
+        &.primary {
+            background-color: #22c55e;
+
+        }
+        &.blue{
+            color: #3b82f6;
+            background: transparent;
+            border: .5px solid #3b82f6;
+            position: relative;
+         
+        }
+        &.orange{
+           background:  #FF5B00;
+            color: #363737;
+            border-radius: 8px;
+        }
+    }
+}
