@@ -15,7 +15,7 @@ keywords:
     'colors',
     "troubleshooting",
     "components",
-    "ui prop"
+    "ui prop",
     ":ui"
   ]
 toc: true
