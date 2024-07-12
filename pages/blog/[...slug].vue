@@ -20,8 +20,6 @@
 </template>
 <script setup>
 
-
-
 const activeId = ref(null);
 
 const route = useRoute();
@@ -53,8 +51,6 @@ onMounted(() => {
 
 setTimeout(()=>{
     elements = document.querySelectorAll("h2, h3");
-  
-
      for (const element of elements) {
     observer.observe(element);
   

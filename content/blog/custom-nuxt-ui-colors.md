@@ -194,6 +194,25 @@ Similarly I can change the border radius and placeholder styles:
 <input type="text" id="search" name="search" placeholder="Search..."/>
 </div>
 
+# UPDATE: Menu List Customization
+
+Certain Nuxt UI components, like USelectMenu, include a dropdown menu as part of their functionality. To customize this menu, utilize the uiMenu prop as shown below:
+```vue
+<USelectMenu
+  v-model="selected"
+  :options="options"
+  :ui="{ color: 'bg-blue-100' }"
+  :uiMenu="{
+    background: 'bg-blue-100',
+    options: {
+      color: 'text-grey-800'
+    }
+  }"
+/>
+```
+
+
+
 These steps allow for extensive customization of Nuxt UI components using the UI prop, providing detailed control over design elements.
 
 ## Troubleshooting
