@@ -1,5 +1,5 @@
 ---
-description: Introduction to Nuxt UI
+description: Customization of Nuxt UI components
 publishedAt: 2024-07-09 8:30:00
 image: /images/icons8-nuxt-js-480.png
 keywords:
@@ -14,6 +14,9 @@ keywords:
     'theming',
     'colors',
     "troubleshooting",
+    "components",
+    "ui prop"
+    ":ui"
   ]
 toc: true
 head:
