@@ -19,6 +19,9 @@
   </article>
 </template>
 <script setup>
+
+
+
 const activeId = ref(null);
 
 const route = useRoute();
@@ -57,6 +60,34 @@ setTimeout(()=>{
   
   } 
 }, 200)
+
+const slug = computed(() => {
+  const path = route.fullPath.split('/');
+  return path[path.length - 1];
+});
+
+const pageTitle = computed(() => `${slug.value.charAt(0).toUpperCase() + slug.value.slice(1)} | Jessica Turner Blog`);
+const pageDescription = computed(() => `Learn about ${slug.value} in this detailed blog post by Jessica Turner.`);
+const ogTitle = computed(() => `${slug.value.charAt(0).toUpperCase() + slug.value.slice(1)} | Jessica Turner Blog`);
+const ogDescription = computed(() => `Learn about ${slug.value} in this detailed blog post by Jessica Turner.`);
+const ogUrl = computed(() => `https://jessica-turner-portfolio-blog.vercel.app${route.fullPath}`);
+const twitterTitle = computed(() => `${slug.value.charAt(0).toUpperCase() + slug.value.slice(1)} | Jessica Turner Blog`);
+const twitterDescription = computed(() => `Learn about ${slug.value} in this detailed blog post by Jessica Turner.`);
+const ogImage = computed(() => doc.value.image || '/images/default-meta-image.png');
+
+useSeoMeta({
+  title: pageTitle,
+  description: pageDescription,
+  ogTitle: ogTitle,
+  ogDescription: ogDescription,
+  ogImage: ogImage,
+  ogUrl: ogUrl,
+  twitterTitle: twitterTitle,
+  twitterDescription: twitterDescription,
+ twitterImage: ogImage,
+
+});
+
 
 
   onBeforeUnmount(() => {

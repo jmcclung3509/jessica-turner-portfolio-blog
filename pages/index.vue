@@ -6,14 +6,14 @@
 
 <script setup>
 useSeoMeta({
-    title: 'Homepage',
-  description: 'This is the homepage',
-  ogTitle: 'Homepage',
-  ogDescription: 'This is the homepage',
+    title: 'Home | Jessica Turner Blog', 
+  description: 'The homepage for the website and blog of Jessica Turner',
+  ogTitle: 'Home | Jessica Turner Blog',
+  ogDescription: 'The homepage for the website and blog of Jessica Turner',
   ogImage: '[og:image]',
   ogUrl: '[og:url]',
-  twitterTitle: 'Homepage',
-  twitterDescription: 'This is the homepage',
+  twitterTitle: 'Home | Jessica Turner Blog',
+  twitterDescription: 'The homepage for the website and blog of Jessica Turner',
   twitterImage: '[twitter:image]',
   twitterCard: 'This is the homepage for the website and blog of Jessica Turner'
 })
