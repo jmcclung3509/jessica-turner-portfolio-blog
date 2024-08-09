@@ -133,8 +133,11 @@ export default defineNuxtConfig({ supabase: { redirect: false } })
 
 ```javascript
 <script setup>
-  const supabase = useSupabaseClient(); const {(data, error)} = await supabase
-  .from("todos") / /Name of the table .select() console.log(data, error)
+  const supabase = useSupabaseClient(); 
+  const {(data, error)} = await supabase
+  .from("todos") / /Name of the table
+  .select() 
+  console.log(data, error)
 </script>
 ```
 
@@ -145,7 +148,7 @@ export default defineNuxtConfig({ supabase: { redirect: false } })
     const supabase = useSupabaseClient();
     const todos = ref([])   // Initialize the todos array
 
- const fetchTransctions = async ()=>{
+ const fetchTransactions = async ()=>{
 
     const {data} = await useAsyncData(key:todos, async () => {
     const { data, error } = await supabase
