@@ -71,7 +71,7 @@ Supabase is an open-source Backend-as-a-Service (BaaS) platform designed to help
 #### 1. In the terminal of your nuxt app
 
 ```console
-npm install 2nuxt/js/supabase --save-dev
+npm install @nuxt/js/supabase --save-dev
 ```
 
 #### 2. Add @nuxtjs/supabase to the modules in nuxt.config
